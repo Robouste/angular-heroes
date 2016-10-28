@@ -9,35 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var HEROES = [
-    { id: 11, name: 'Fatman' },
-    { id: 12, name: 'Slipman' },
-    { id: 13, name: 'Scatwoman' },
-    { id: 14, name: 'Celeri' },
-    { id: 15, name: 'Magneta' },
-    { id: 16, name: 'RubberMan' },
-    { id: 17, name: 'Dynama' },
-    { id: 18, name: 'Dr IQ' },
-    { id: 19, name: 'Magma' },
-    { id: 20, name: 'Tornado' }
-];
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Tour of Heroes';
-        this.heroes = HEROES;
+var hero_1 = require('./hero');
+var HeroDetailComponent = (function () {
+    function HeroDetailComponent() {
     }
-    AppComponent.prototype.onSelect = function (hero) {
-        this.selectedHero = hero;
-    };
-    AppComponent = __decorate([
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', hero_1.Hero)
+    ], HeroDetailComponent.prototype, "hero", void 0);
+    HeroDetailComponent = __decorate([
         core_1.Component({
-            selector: 'app',
-            templateUrl: 'templates/list.html',
-            styleUrls: ['styles/list.css']
+            selector: 'hero-detail',
+            templateUrl: 'templates/hero-detail.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], HeroDetailComponent);
+    return HeroDetailComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.HeroDetailComponent = HeroDetailComponent;
+//# sourceMappingURL=hero-detail.component.js.map

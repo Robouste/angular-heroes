@@ -7562,7 +7562,7 @@
       <DependentUpon>list.css</DependentUpon>
     </Content>
     <Content Include="systemjs.config.js" />
-    <Content Include="templates\edit.html" />
+    <Content Include="templates\hero-detail.html" />
     <Content Include="templates\list.html" />
   </ItemGroup>
   <ItemGroup>
@@ -10444,6 +10444,8 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\hero-detail.component.ts" />
+    <TypeScriptCompile Include="app\hero.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="node_modules\%40angular\common\index.d.ts" />
     <TypeScriptCompile Include="node_modules\%40angular\common\src\common_module.d.ts" />
