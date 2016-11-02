@@ -4,7 +4,19 @@
     "inputFile": "style.less"
   },
   {
-    "outputFile": "styles/list.css",
-    "inputFile": "styles/list.less"
+    "outputFile": "app/styles/heroes.component.css",
+    "inputFile": "app/styles/heroes.component.less"
+  },
+  {
+    "outputFile": "app/styles/dashboard.component.css",
+    "inputFile": "app/styles/dashboard.component.less"
+  },
+  {
+    "outputFile": "app/styles/hero-detail.component.css",
+    "inputFile": "app/styles/hero-detail.component.less"
+  },
+  {
+    "outputFile": "app/styles/app.component.css",
+    "inputFile": "app/styles/app.component.less"
   }
 ]
