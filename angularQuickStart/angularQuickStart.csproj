@@ -40,12 +40,19 @@
     <Content Include="app\styles\hero-detail.component.min.css">
       <DependentUpon>hero-detail.component.css</DependentUpon>
     </Content>
+    <Content Include="app\styles\hero-search.component.css">
+      <DependentUpon>hero-search.component.less</DependentUpon>
+    </Content>
+    <Content Include="app\styles\hero-search.component.min.css">
+      <DependentUpon>hero-search.component.css</DependentUpon>
+    </Content>
     <Content Include="app\styles\heroes.component.css">
       <DependentUpon>heroes.component.less</DependentUpon>
     </Content>
     <Content Include="app\styles\heroes.component.min.css">
       <DependentUpon>heroes.component.css</DependentUpon>
     </Content>
+    <Content Include="app\templates\hero-search.component.html" />
     <Content Include="index.html" />
     <Content Include="node_modules\%40angular\common\bundles\common-testing.umd.js" />
     <Content Include="node_modules\%40angular\common\bundles\common.umd.js" />
@@ -10462,17 +10469,20 @@
     <Content Include="node_modules\zone.js\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\app-routing.module.ts" />
-    <TypeScriptCompile Include="app\app.component.ts" />
-    <TypeScriptCompile Include="app\dashboard.component.ts" />
-    <TypeScriptCompile Include="app\heroes.component.ts" />
-    <TypeScriptCompile Include="app\app.module.ts" />
-    <TypeScriptCompile Include="app\hero-detail.component.ts" />
-    <TypeScriptCompile Include="app\hero.service.ts" />
-    <TypeScriptCompile Include="app\hero.ts" />
-    <TypeScriptCompile Include="app\in-memory-data.service.ts" />
-    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\components\hero-search.component.ts" />
+    <TypeScriptCompile Include="app\extensions\rxjs-extensions.ts" />
     <TypeScriptCompile Include="app\mock-heroes.ts" />
+    <TypeScriptCompile Include="app\modules\app-routing.module.ts" />
+    <TypeScriptCompile Include="app\components\app.component.ts" />
+    <TypeScriptCompile Include="app\components\dashboard.component.ts" />
+    <TypeScriptCompile Include="app\components\heroes.component.ts" />
+    <TypeScriptCompile Include="app\modules\app.module.ts" />
+    <TypeScriptCompile Include="app\components\hero-detail.component.ts" />
+    <TypeScriptCompile Include="app\services\hero-search.service.ts" />
+    <TypeScriptCompile Include="app\services\hero.service.ts" />
+    <TypeScriptCompile Include="app\models\hero.ts" />
+    <TypeScriptCompile Include="app\services\in-memory-data.service.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="node_modules\%40angular\common\index.d.ts" />
     <TypeScriptCompile Include="node_modules\%40angular\common\src\common_module.d.ts" />
     <TypeScriptCompile Include="node_modules\%40angular\common\src\directives\index.d.ts" />
@@ -11935,9 +11945,6 @@
     <TypeScriptCompile Include="node_modules\zone.js\lib\zone.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\components\" />
-    <Folder Include="app\modules\" />
-    <Folder Include="app\services\" />
     <Folder Include="node_modules\lite-server\node_modules\browser-sync\node_modules\browser-sync-ui\node_modules\weinre\node_modules\express\node_modules\connect\node_modules\formidable\lib\" />
     <Folder Include="node_modules\lite-server\node_modules\browser-sync\node_modules\chokidar\node_modules\readdirp\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\" />
     <Folder Include="node_modules\lite-server\node_modules\browser-sync\node_modules\chokidar\node_modules\readdirp\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\" />
@@ -11996,6 +12003,7 @@
     <Content Include="app\styles\dashboard.component.less" />
     <Content Include="app\styles\hero-detail.component.less" />
     <Content Include="app\styles\app.component.less" />
+    <Content Include="app\styles\hero-search.component.less" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

@@ -18,5 +18,9 @@
   {
     "outputFile": "app/styles/app.component.css",
     "inputFile": "app/styles/app.component.less"
+  },
+  {
+    "outputFile": "app/styles/hero-search.component.css",
+    "inputFile": "app/styles/hero-search.component.less"
   }
 ]
